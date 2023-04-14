@@ -1,0 +1,5 @@
+vertexlitgeneric
+{
+    $basetexture models/milou2764/palmetto_clipped_frond
+    $bumpmap models/milou2764/palmetto_clipped_frond_normal
+}

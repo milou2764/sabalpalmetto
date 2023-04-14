@@ -1,0 +1,9 @@
+#!/bin/bash
+wine ~/.wine/drive_c/steamcmd/steamapps/common/GarrysMod/bin/studiomdl.exe -nop4 sabal_palmetto_01.qc
+wine ~/.wine/drive_c/steamcmd/steamapps/common/GarrysMod/bin/studiomdl.exe -nop4 sabal_palmetto_02.qc
+wine ~/.wine/drive_c/steamcmd/steamapps/common/GarrysMod/bin/studiomdl.exe -nop4 sabal_palmetto_03.qc
+wine ~/.wine/drive_c/steamcmd/steamapps/common/GarrysMod/bin/studiomdl.exe -nop4 sabal_palmetto_04.qc
+wine ~/.wine/drive_c/steamcmd/steamapps/common/GarrysMod/bin/studiomdl.exe -nop4 sabal_palmetto_05.qc
+
+rm -r /home/milou/.local/share/Steam/steamapps/common/GarrysMod/garrysmod/addons/sabalpalmetto/models
+mv /home/milou/.local/share/Steam/steamapps/common/GarrysMod/garrysmod/models /home/milou/.local/share/Steam/steamapps/common/GarrysMod/garrysmod/addons/sabalpalmetto/

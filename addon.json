@@ -1,0 +1,12 @@
+{
+	"title"		:	"sabal_palmetto",
+	"type"		:	"model",
+	"ignore"	:
+	[
+		"*.sh",
+		".git/*",
+		".gitignore",
+		"src/*",
+		"icon.jpg"
+	]
+}

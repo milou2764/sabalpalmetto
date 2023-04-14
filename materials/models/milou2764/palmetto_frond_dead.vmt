@@ -1,0 +1,7 @@
+vertexlitgeneric
+{
+    $basetexture models/milou2764/palmetto_frond_dead
+    $bumpmap models/milou2764/palmetto_frond_dead_normal
+    $nocull 1
+    $alphatest 1
+}

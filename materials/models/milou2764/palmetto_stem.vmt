@@ -1,0 +1,5 @@
+vertexlitgeneric
+{
+    $basetexture models/milou2764/palmetto_stem
+    $bumpmap models/milou2764/palmetto_stem_normal
+}

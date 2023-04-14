@@ -1,0 +1,51 @@
+#!/bin/bash
+mkdir -p ../materials/models/milou2764
+
+# bark
+vtex2 convert -f dxt1 -o ../materials/models/milou2764/palmetto_bark.vtf palmetto_bark.png
+vtex2 convert -f dxt1 -n -o ../materials/models/milou2764/palmetto_bark_normal.vtf palmetto_bark_normal.png
+echo -n "vertexlitgeneric
+{
+    \$basetexture models/milou2764/palmetto_bark
+    \$bumpmap models/milou2764/palmetto_bark_normal
+}" > "../materials/models/milou2764/palmetto_bark.vmt"
+
+# clipped frond
+vtex2 convert -f dxt1 -o ../materials/models/milou2764/palmetto_clipped_frond.vtf palmetto_clipped_frond.png
+vtex2 convert -f dxt1 -n -o ../materials/models/milou2764/palmetto_clipped_frond_normal.vtf palmetto_clipped_frond_normal.png
+echo -n "vertexlitgeneric
+{
+    \$basetexture models/milou2764/palmetto_clipped_frond
+    \$bumpmap models/milou2764/palmetto_clipped_frond_normal
+}" > "../materials/models/milou2764/palmetto_clipped_frond.vmt"
+
+# frond
+vtex2 convert -f dxt5 -o ../materials/models/milou2764/palmetto_frond.vtf palmetto_frond.png
+vtex2 convert -f dxt1 -n -o ../materials/models/milou2764/palmetto_frond_normal.vtf palmetto_frond_normal.png
+echo -n "vertexlitgeneric
+{
+    \$basetexture models/milou2764/palmetto_frond
+    \$bumpmap models/milou2764/palmetto_frond_normal
+    \$nocull 1
+    \$alphatest 1
+}" > "../materials/models/milou2764/palmetto_frond.vmt"
+
+# frond dead
+vtex2 convert -f dxt5 -o ../materials/models/milou2764/palmetto_frond_dead.vtf palmetto_frond_dead.png
+vtex2 convert -f dxt1 -n -o ../materials/models/milou2764/palmetto_frond_dead_normal.vtf palmetto_frond_dead_normal.png
+echo -n "vertexlitgeneric
+{
+    \$basetexture models/milou2764/palmetto_frond_dead
+    \$bumpmap models/milou2764/palmetto_frond_dead_normal
+    \$nocull 1
+    \$alphatest 1
+}" > "../materials/models/milou2764/palmetto_frond_dead.vmt"
+
+# stem
+vtex2 convert -f dxt1 -o ../materials/models/milou2764/palmetto_stem.vtf palmetto_stem.png
+vtex2 convert -f dxt1 -n -o ../materials/models/milou2764/palmetto_stem_normal.vtf palmetto_stem_normal.png
+echo -n "vertexlitgeneric
+{
+    \$basetexture models/milou2764/palmetto_stem
+    \$bumpmap models/milou2764/palmetto_stem_normal
+}" > "../materials/models/milou2764/palmetto_stem.vmt"
